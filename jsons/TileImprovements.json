@@ -3,13 +3,14 @@
 	{
 		"name": "Farm",
 		"terrainsCanBeBuiltOn": ["Land"],
-		"food": 2,
+		"food": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Agriculture",
 		"uniques": ["Can also be built on tiles adjacent to fresh water",
-			"[+2 Food] from [Fresh water] tiles <after discovering [Physics]>",
+			"[+2 Food] from [Fresh water] tiles <after discovering [Electricity]>",
 			"[+2 Food] from [Fresh water] tiles <after discovering [Engineering]>",
 			"[+2 Food] <after discovering [Fertilizer]>",
+			"[+4 Food] <after discovering [Refrigeration]>",
 			"Can be built outside your borders",
                         "Pillaging this improvement yields approximately [+18 Gold]"],
 		"shortcutKey": "F"
@@ -20,7 +21,12 @@
 		"production": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Construction",
-		"uniques": ["[+1 Production] <after discovering [Scientific Theory]>",
+		"uniques": [
+			"Does not need removal of [Forest]",
+			"Does not need removal of [Jungle]",
+			"[+1 Production] <after discovering [Metal Casting]>",
+			"[+1 Production] <after discovering [Steel]>",
+                        "[+1 Production] <after discovering [Combustion]>",
 			"Can be built outside your borders",
 			"Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "L"
@@ -28,10 +34,11 @@
 	{
 		"name": "Mine",
 		"terrainsCanBeBuiltOn": ["Land"],
-		"production": 2,
+		"production": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Mining",
 		"uniques": ["[+1 Production] <after discovering [Chemistry]>",
+			"[+1 Production] <after discovering [Steel]>",
 			"[+3 Production] <after discovering [Dynamite]>",
 			"Can be built outside your borders",
 			"Pillaging this improvement yields approximately [+20 Gold]"],
@@ -40,10 +47,14 @@
 	{
 		"name": "Trading post",
 		"terrainsCanBeBuiltOn": ["Land"],
-		"gold": 2,
+		"gold": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Guilds",
-		"uniques": ["[+1 Gold] <after discovering [Economics]>",
+		"uniques": [
+			"Does not need removal of [Forest]",
+			"Does not need removal of [Jungle]",
+			"[+1 Gold] <after discovering [Banking]>",
+                        "[+1 Gold] <after discovering [Economics]>",
 			"Can be built outside your borders",
 			"Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "T"
@@ -55,10 +66,11 @@
 		"turnsToBuild": 7,
 		"terrainsCanBeBuiltOn": ["Land"],
 		"techRequired": "Trapping",
-		"uniques": ["Does not need removal of [Forest]",
+		"uniques": [
+			"Does not need removal of [Forest]",
 			"Does not need removal of [Jungle]",
 			"Can be built outside your borders",
-			"[+1 Gold] <after discovering [Economics]>",
+			"[+2 Gold] <after discovering [Economics]>",
 			"Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "C"
 	},
@@ -87,8 +99,11 @@
 		"gold":1,
 		"terrainsCanBeBuiltOn": ["Land"],
 		"techRequired": "Animal Husbandry",
-		"uniques": ["[+1 Food] <after discovering [Fertilizer]>",
-			"[+1 Gold] <after discovering [Fertilizer]>",
+		"uniques": [
+			"[+1 Food] from [non-fresh water] tiles <after discovering [Fertilizer]>",
+			"[+1 Gold] from [non-fresh water] tiles <after discovering [Fertilizer]>",
+			"[+2 Food] <after discovering [Refrigeration]>",
+			"[+2 Gold] <after discovering [Refrigeration]>",
 			"Can be built outside your borders",
 			"Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "P"
@@ -100,10 +115,15 @@
 		"gold": 1,
 		"food": 1,
 		"techRequired": "Calendar",
-		"uniques": ["[+1 Food] <after discovering [Fertilizer]>",
+		"uniques": [
+			"[+1 Food] <after discovering [Fertilizer]>",
 			"[+1 Gold] <after discovering [Fertilizer]>",
-			"[+1 Food] from [Fresh water] tiles <after discovering [Physics]>",
-			"[+1 Gold] from [Fresh water] tiles <after discovering [Physics]>",
+			"[+2 Food] <after discovering [Refrigeration]>",
+			"[+2 Gold] <after discovering [Refrigeration]>",
+                        "[+1 Food] from [Fresh water] tiles <after discovering [Electricity]>",
+			"[+1 Gold] from [Fresh water] tiles <after discovering [Electricity]>",
+			"[+1 Food] from [Fresh water] tiles <after discovering [Engineering]>",
+			"[+1 Gold] from [Fresh water] tiles <after discovering [Engineering]>",
 			"Can be built outside your borders",
 			"Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "P"
@@ -113,7 +133,8 @@
 		"terrainsCanBeBuiltOn": ["Land"],
 		"turnsToBuild": 8,
 		"techRequired": "Masonry",
-		"uniques": ["[+2 Production] <after discovering [Chemistry]>",
+		"uniques": [
+			"[+2 Production] <after discovering [Chemistry]>",
 			"Can be built outside your borders",
 			"Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "Q"
@@ -121,9 +142,12 @@
 	{
 		"name": "Fishing Boats",
 		"terrainsCanBeBuiltOn": ["Water"],
-		"food": 2,
+		"food": 1,
 		"techRequired": "Sailing",
-		"uniques": ["[+1 Gold] <after discovering [Compass]>",
+		"uniques": [
+			"[+1 Gold] <after discovering [Compass]>",
+			"[+1 Food] <after discovering [Astronomy]>",
+                        "[+1 Food] <after discovering [Navigation]>",
 			"Can be built outside your borders",
 			"Pillaging this improvement yields approximately [+10 Gold]"],
 		"shortcutKey": "F"
@@ -228,10 +252,13 @@
 	{
 		"name": "Academy",
 		"terrainsCanBeBuiltOn": ["Land"],
-		"science": 8,
-		"uniques": ["Great Improvement",
-			"[+2 Science] <after discovering [Scientific Theory]>",
-			"[+2 Science] <after discovering [Atomic Theory]>",
+		"science": 10,
+		"uniques": [
+			"Great Improvement",
+			"[+20 Science] <after discovering [Scientific Theory]>",
+			"[+20 Science] <after discovering [Computers]>",
+			"[+15 Science] <after discovering [Atomic Theory]>",
+			"[+10 Science] <after discovering [Education]>",
 			"Removes removable features when built",
 			"Can be built outside your borders",
 			"Pillaging this improvement yields approximately [+20 Gold]"]
@@ -240,7 +267,12 @@
 		"name": "Landmark",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"culture": 8,
-		"uniques": ["Great Improvement",
+		"uniques": [
+			"Great Improvement",
+			"[+2 Culture] <after discovering [Acoustics]>",
+			"[+2 Culture] <after discovering [Drama and Poetry]>",
+			"[+15 Culture] <after discovering [Architecture]>",
+			"[+3 Culture] <after discovering [Flight]>",
 			"Removes removable features when built",
 			"Can be built outside your borders",
 			"Pillaging this improvement yields approximately [+20 Gold]"]
@@ -249,8 +281,17 @@
 		"name": "Manufactory",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"production": 8,
-		"uniques": ["Great Improvement",
-			"[+2 Production] <after discovering [Chemistry]>",
+		"uniques": [
+			"Great Improvement",
+			"[+5 Production] <after discovering [Nanotechnology]>",
+			"[+5 Production] <after discovering [Machinery]>",
+			"[+15 Production] <after discovering [Electricity]>",
+			"[+2 Production] <after discovering [Metallurgy]>",
+			"[+15 Production] <after discovering [Industrialization]>",
+			"[+5 Production] <after discovering [Replaceable Parts]>",
+			"[+5 Production] <after discovering [Plastics]>",
+			"[+5 Production] <after discovering [Electronics]>",
+                        "[+15 Production] <after discovering [Robotics]>",
 			"Removes removable features when built",
 			"Can be built outside your borders",
 			"Pillaging this improvement yields approximately [+20 Gold]"]
@@ -260,7 +301,9 @@
 		"terrainsCanBeBuiltOn": ["Land"],
 		"gold": 8,
 		"uniques": ["Great Improvement",
-			"[+2 Gold] <after discovering [Economics]>",
+			"[+10 Gold] <after discovering [Economics]>",
+			"[+2 Gold] <after discovering [Banking]>",
+			"[+5 Gold] <after discovering [Navigation]>",
 			"Removes removable features when built",
 			"Can be built outside your borders",
 			"Pillaging this improvement yields approximately [+20 Gold]"]
@@ -269,8 +312,13 @@
 		"name": "Holy site",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"faith": 8,
-		"uniques": ["Great Improvement",
-			"Removes removable features when built",
+		"uniques": [
+			"Great Improvement",
+			"[+10 Faith] <after discovering [Theology]>",
+			"[+2 Faith] <after discovering [Acoustics]>",
+			"[+3 Faith] <after discovering [Printing Press]>",
+			"[+2 Faith] <after discovering [Architecture]>",
+		        "Removes removable features when built",
 			"Can be built outside your borders",
 			"Pillaging this improvement yields approximately [+20 Gold]"]
 	},
@@ -283,7 +331,7 @@
 			"Adjacent enemy units ending their turn take [30] damage",
 			"Can be built just outside your borders",
         	        "Gain control over [all] tiles in a [1]-tile radius",
-			"Removes removable features when built",
+			//"Removes removable features when built",
 		]
 	},
 
@@ -305,9 +353,11 @@
 		"turnsToBuild": 7,
 		"uniques": ["Cannot be built on [Bonus resource] tiles",
 			"[+1 Food] for each adjacent [Mountain]",
-			"[+2 Food] from [Fresh water] tiles <after discovering [Civil Service]>",
+		        "[+2 Food] from [Fresh water] tiles <after discovering [Electricity]>",
+			"[+2 Food] from [Fresh water] tiles <after discovering [Engineering]>",
 			"[+2 Food] <after discovering [Fertilizer]>",
-            "Pillaging this improvement yields approximately [+18 Gold]"],
+			"[+4 Food] <after discovering [Refrigeration]>",
+                        "Pillaging this improvement yields approximately [+18 Gold]"],
 		"techRequired": "Construction",
 		"shortcutKey": "F"
 	},
