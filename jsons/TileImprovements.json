@@ -3,7 +3,7 @@
 	{
 		"name": "Farm",
 		"terrainsCanBeBuiltOn": ["Land"],
-		"food": 1,
+		"food": 2,
 		"turnsToBuild": 7,
 		"techRequired": "Agriculture",
 		"uniques": ["Can also be built on tiles adjacent to fresh water",
