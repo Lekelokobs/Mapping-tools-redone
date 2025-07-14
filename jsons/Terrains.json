@@ -330,7 +330,7 @@
 		"unbuildable": true,
 		"uniques": ["Must be adjacent to [0] [Coast] tiles",
 			"Must be adjacent to [1] to [6] [Jungle] tiles",
-			"Grants 500 Gold to the first civilization to discover it"],
+			"Grants [+500 Gold] to the first civilization to discover it"],
 		"weight": 2
 	},
 	{
@@ -402,7 +402,7 @@
 		"occursOn": ["Grassland"],
 		"uniques": ["Must be adjacent to [1] to [5] [Coast] tiles",
 			"Must be adjacent to [1] [Mountain] tiles",
-			"Neighboring tiles except [Mountain] will convert to [Coast]"],
+			"Neighboring tiles will convert to [Coast]<in tiles without [Mountain]>"],
 		"turnsInto": "Mountain",
 		"impassable": true,
 		"weight": 10
