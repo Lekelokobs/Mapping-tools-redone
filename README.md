@@ -8,4 +8,4 @@ Some alterations from the original are:
 -Fixed forest not giving any production
 -Jungles now give 45 production as opposed to forests giving 30 when cut down
 
-Will probably develop this into a full terraforming mod
+-Almost all tile improvements where improved with Technology as the game goes on
